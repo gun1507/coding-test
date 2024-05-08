@@ -28,6 +28,5 @@ public class MazeRunner {
         }
         // exit
         map[sc.nextInt() - 1][sc.nextInt() - 1] = -2;
-
     }
 }
