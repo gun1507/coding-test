@@ -53,6 +53,15 @@ public class Solution {
                         okay = false;
                     break;
 
+                case CMD_CANCEL:
+                    param1 = Integer.parseInt(st.nextToken());
+                    ans1 = Integer.parseInt(st.nextToken());
+                    ans2 = Integer.parseInt(st.nextToken());
+                    res = usersolution.cancelReservation(param1);
+                    if (res.id != ans1 || res.num != ans2)
+                        okay = false;
+                    break;
+
                 default:
                     okay = false;
                     break;
